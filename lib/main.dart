@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'home.dart';
-import 'bottom.dart';
-// Nama : Achmad Ikbal Rizkytama
-// Nim : 124200019
+
+// Nama : Bima Novianto
+// Nim : 124200003
 void main() {
   runApp(const MyApp());
 }
@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Responsi Praktikum',
       theme: ThemeData(
-        // primaryColor: Colors.deepPurple,
-      ),
+          // primaryColor: Colors.deepPurple,
+          ),
       home: PageBendera(),
     );
   }

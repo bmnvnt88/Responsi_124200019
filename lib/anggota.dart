@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class Anggota extends StatefulWidget {
   const Anggota({Key? key}) : super(key: key);
 
@@ -7,32 +8,19 @@ class Anggota extends StatefulWidget {
 }
 
 class _AnggotaState extends State<Anggota> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: Colors.pink[100],
       body: Stack(
         children: [
-          // Image.asset("assets/bg4.jpg", width: MediaQuery.of(context).size.width,
-          //   fit: BoxFit.cover,
-          // ),
           SingleChildScrollView(
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
-              // decoration: BoxDecoration(
-              //     image: DecorationImage(
-              //       image: AssetImage('assets/bg2.jpg'),
-              //     )
-              // ),
               child: Column(
                 children: [
                   Card(
                     color: Colors.transparent,
                     shape: RoundedRectangleBorder(
-                      // side: BorderSide(
-                      //   color: Colors.black,
-                      // ),
                       borderRadius: BorderRadius.circular(25.0),
                     ),
                     child: Container(
@@ -48,25 +36,24 @@ class _AnggotaState extends State<Anggota> {
                             backgroundImage: AssetImage('assets/bg2.jpg'),
                           ),
                           SizedBox(height: 15),
-                          Text("Achmad Ikbal Rizkytama",
+                          Text(
+                            "Bima Novianto",
                             style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20,
-                              color: Colors.white
-                            ),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                                color: Colors.white),
                           ),
-                          Text("124200019",
-                            style: TextStyle(
-                              fontSize: 18, color: Colors.white
-                            ),
+                          Text(
+                            "124200003",
+                            style: TextStyle(fontSize: 18, color: Colors.white),
                           ),
                         ],
                       ),
                     ),
                   ),
-                
-                  SizedBox(height: 20,),
-                
+                  SizedBox(
+                    height: 20,
+                  ),
                 ],
               ),
             ),

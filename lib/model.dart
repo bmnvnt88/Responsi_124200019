@@ -1,25 +1,3 @@
-// class ProductDataModel {
-//    List<MatchesModel>? items;
-
-//   ProductDataModel(this.items);
-
-//   ProductDataModel.fromJson(List json) {
-//     if (json!= null) {
-//       items = <MatchesModel>[];
-//       json.forEach((v) {
-//         items!.add(new MatchesModel.fromJson(v));
-//       });
-//     }
-//   }
-
-//   Map<String, dynamic> toJson() {
-//     final Map<String, dynamic> data = new Map<String, dynamic>();
-//     if (this != null) {
-//       data['items'] = this.items!.map((v) => v.toJson()).toList();
-//     }
-//     return data;
-//   }
-// }
 class MatchesModel {
   String? id;
   String? venue;

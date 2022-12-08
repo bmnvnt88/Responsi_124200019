@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'dart:ui';
 import 'anggota.dart';
 
 class MyStatefulWidget extends StatefulWidget {
@@ -28,17 +26,13 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: Text("Pertandingan ",
-            style: TextStyle(
-                fontWeight: FontWeight.bold
-            )
-        ),
+            style: TextStyle(fontWeight: FontWeight.bold)),
         automaticallyImplyLeading: false,
         centerTitle: true,
       ),
       body: Container(
         child: _widgetOptions[_selectedIndex],
       ),
-
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
